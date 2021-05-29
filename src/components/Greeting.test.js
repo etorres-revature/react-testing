@@ -12,3 +12,11 @@ test("renders 'Hello World' as a text", () => {
   const helloWorldEl = screen.getByText("Hello World!!");
   expect(helloWorldEl).toBeInTheDocument();
 });
+
+test("renders 'Great to be seeing you today...' as text", () => {
+  render(<Greeting />);
+  const greetingEl = screen.getByText("Great to be seeing you today...");
+  expect(greetingEl).toBeInTheDocument();
+});
+
+// test();
